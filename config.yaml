@@ -7,13 +7,13 @@ proxy:
 singleuser:
   # https://zero-to-jupyterhub.readthedocs.io/en/latest/user-environment.html
   image:
-    name: pupster90/io
+    name: tom-henrich/io
     tag: latest
   # https://zero-to-jupyterhub.readthedocs.io/en/latest/user-environment.html
   lifecycleHooks:
     postStart:
       exec:
-        command: ["sh","-c","rm -rf Welcome_to_io_Hub && git clone https://github.com/pupster90/Welcome_to_io_Hub.git"]
+        command: ["sh","-c","rm -rf Welcome_to_SPToolkit && git clone https://github.com/tom-henrich/sptoolkit_notebook.git"]
   # https://zero-to-jupyterhub.readthedocs.io/en/latest/user-storage.html
   # NOTE: I couldn't get this working, will try later
   #storage:
